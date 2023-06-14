@@ -8,7 +8,7 @@ public class Track {
     int year;
     String album;
 
-    public Track( String title, String artist, int duration, int year, String album) {
+    public Track(String title, String artist, int duration, int year, String album) {
 
         this.title = title;
         this.artist = artist;

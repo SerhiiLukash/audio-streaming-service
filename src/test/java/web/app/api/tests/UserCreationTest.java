@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserCreationTest {
     @Test
-    public void testGetStudentWithId () {
+    public void testGetStudentWithId() {
 
         UserService userService = new UserService();
 
@@ -23,6 +23,7 @@ public class UserCreationTest {
     public void testCreateUser() {
         String endpoint = "http://localhost:8080/api/users";
         User body = new User("testFirstName", "testLastName", "test_email@gmail.com");
+
         given().
                 header("Content-Type", "application/json").
                 body(body).
